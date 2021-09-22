@@ -1,0 +1,103 @@
+body{
+    background-color: white;
+}
+
+.nav-item{
+    margin-right: 40px;
+    background-color: whitesmoke;
+ 
+}
+
+.button_get{
+    background-color: green;
+    color: white;
+    height: 40px;
+    border-radius: 5px;
+    padding: 0 25px 0 25px ;
+}
+.button_nav{
+   margin-right: 25px;
+}
+
+.newacct{
+    margin-left: 30%;
+    margin-top: 100px;
+    margin-bottom: 30%;
+}
+div.newacct h1{
+    margin-left: 100px;
+}
+.newacct1{
+    margin-top: 5%;
+}
+div.newacct-1 input{
+    width: 25%;
+    padding: 10px;
+    border-radius: 3px;
+    border-color: rgb(173, 170, 170);
+}
+div.newacct-2 input{
+    width: 50%;
+    padding: 10px;
+    margin-top: 40px;
+    border-radius: 3px;
+    border-color: rgb(173, 170, 170);
+}
+
+div.newacct-3 input{
+    width: 50%;
+    padding: 10px;
+    margin-top: 40px;
+    border-radius: 3px;
+    border-color: rgb(173, 170, 170);
+}
+
+div.newacct-4 input{
+    width: 50%;
+    padding: 10px;
+    margin-top: 40px;
+    border-radius: 3px;
+    border-color: rgb(173, 170, 170);
+}
+
+div.newacct-5 input{
+    width: 50%;
+    padding: 10px;
+    margin-top: 40px;
+    border-radius: 3px;
+    border-color: rgb(173, 170, 170);
+}
+.newacct-6{
+    margin-top: 30px;
+    
+}
+.newacct-7{
+    margin-top: 20px;
+}
+.newacct-81{
+    width: 50%;
+    padding: 10px;
+    color: white;
+    background-color: green;
+    border-color: green;
+    border-radius: 3px;
+    margin-top: 30px;
+}
+.newacct9-1{
+    width: 50%;
+    padding: 10px;
+    margin-top: 30px;
+    border-radius: 3px;
+    border-color: rgb(57, 85, 57);
+    background-color: white;
+}
+
+@media (min-width:425){
+    body{
+        background-color: purple;
+    }
+    div.newacct h1{
+        margin-left: -80px;
+        font-size: 5px;
+    }
+}

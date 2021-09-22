@@ -31,7 +31,8 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="aboutspon.html">About</a></li>
-              <li><a class="dropdown-item" href="#">Team </a></li>
+              <li><a class="dropdown-item" href="{%url 'signin'%}">TEAM</a></li>
+
             </ul>
           </li>
                         
@@ -65,11 +66,11 @@
           </li>
 
           <li class="button_nav">
-            <a href="signin.html"><button class="btn btn-outline-success">Sign in</button></a>
+            <a href="{% url 'signin' %}"><button class="btn btn-outline-success">Sign in</button></a>
           </li>
 
          
-            <button class="button_get"> Get Started</button>
+           <a href="{% url 'passwordreset' %} "><button class="button_get"> Get Started</button></a>
           
 
   
@@ -84,7 +85,7 @@
 <div class="about">
   <div class="image1">
      
-    <img class="image1-1" src="imagefolder/about-header-ceo.svg" alt="..." width="80%">
+    <img class="image1-1" src="{% static 'imagefolder/about-header-ceo.svg' %} " alt="..." width="80%">
     <p> Bill Kenneth Co-founder/CEO</p>
     
  </div>   
@@ -92,7 +93,7 @@
 <div class="aboutmain">
  
   <div class="about1">
-     <img src="imagefolder/about-header-bg.svg" alt="..." width="70%">
+     <img src="{% static 'imagefolder/about-header-bg.svg'%} " alt="..." width="70%">
   </div>
 
 <div class="about2">
@@ -104,7 +105,8 @@
      <p class="p1">Get Started </p>
 
      <p class="p1"> Check our Youtube channel for more info</p>
-    <a href="https://farmsponsor.com.ng/about#"> Watch the clips <span><img src="imagefolder/right-arrow.svg" alt=""></span></a>
+    <a href="https://farmsponsor.com.ng/about#"> Watch the clips <span>
+      <img src="{%static 'imagefolder/right-arrow.svg' %} " alt=""></span></a>
   </div>
 </div> 
 </div>
@@ -119,7 +121,7 @@
 
     <div class="about3-1">
       <div>
-        <img src="imagefolder/about-mission-img.svg" alt="">
+      <img src="{ % Static 'imagefolder/about-mission-img.svg' % }" alt="">
        </div>  
         <div class="about-h1"> 
             <h2> Our Mission</h2>
@@ -129,7 +131,7 @@
   
   <div class="about3-2">
         <div>
-          <img src="imagefolder/about-vision-img.svg" alt="" >
+          <img src="{% static 'imagefolder/about-vision-img.svg'% } " alt="" >
         </div>
            <div class="about-h2">
                <h2> Vision</h2>
@@ -144,29 +146,33 @@
 <h1> We’ve been making progress</h1>
 <div class="about4-1">
     <div class="abt1">
-    <img src="imagefolder/reviews-fs (1).png" alt="">
+    <img src="{% static 'imagefolder/reviews-fs (1).png'%} " alt="">
     <p> 100+ Reviews</p>
   </div>
 
   <div class="abt2">
-    <img src="imagefolder/farmers.svg" alt="">
-    <p>300+  Farmers</p>
+    <img src="{% static 'imagefolder/farmers.svg'%} " alt="">
+    <p> 100+ Reviews</p>
   </div>
+  
 
   <div class="abt3">
-    <img src="imagefolder/sponsors-fs.svg" alt="">
+    <img src="{% static 'imagefolder/sponsors-fs.svg'%} " alt="">
     <p> 4,000+  Sponsors</p>
   </div>
 
+
   <div class="abt4">
-    <img src="imagefolder/farms-fs.svg" alt="">
+    <img src="{% static 'imagefolder/farms-fs.svg'%} " alt="">
     <p> 1,000+  Farms</p>
   </div>
 
+
   <div class="abt5">
-    <img src="imagefolder/cycles.svg" alt="">
+    <img src="{% static 'imagefolder/cycles.svg'%} " alt="">
     <p> 36  Cycles</p>
-  </div> 
+  </div>
+  
 </div>
 </div>
 
@@ -178,20 +184,20 @@
     
     <div class="about5-body">
         <div class="abt5-body1">
-            <img src="imagefolder/services-img01.svg" alt="">
+            <img src="{%static 'imagefolder/services-img01.svg' %} " alt="">
             <h2>Regular Sponsorship </h2>
             <p> We open Regular Sponsorship windows for poultry farming at least once a month. 
                 You can sponsor a local farmer with Farmsponsor every month for a return on your sponsorship.</p>
         </div>
         <div class="abt5-body2" >
-            <img src="imagefolder/services-img02.svg" alt="">
+            <img src="{% static 'imagefolder/services-img02.svg' %} " alt="">
             <h2> Equity Sponsorship</h2>
             <p> Funding for our farm expansion plan is to be sourced from private equity sponsors, 
                 who are interested in a medium-term investment of five years with a minimum equity contribution of N1,000,000 per sponsor.</p>
         </div>
 
         <div class="abt5-body3">
-            <img src="imagefolder/services-img03.svg" alt="">
+            <img src="{% static 'imagefolder/services-img03.svg' %} " alt="">
             <h2> Vestbanking</h2>
             <p> VestBanking allows sponsors to add more value by keeping their funds with us till a new sponsorship window opens,
                 and the benefits are enormous as sponsors can now participate in future sponsorship windows in advance, on time and
@@ -201,7 +207,7 @@
  
       <div class="about5-body1">
         <div class="abt5-body4" >
-            <img src="imagefolder/services-img04.svg" alt="">
+            <img src="{% static 'imagefolder/services-img04.svg' %} " alt="">
             <h2> FOGS</h2>
             <p> Farmsponsor Out-Grower Scheme, a programme of Farmsponsor that caters for farmers. 
                 They enjoy access to quality farm inputs/services (feed, medication, day old chicks, Veterinarian, insurance) 
@@ -211,14 +217,14 @@
         </div>
 
         <div class="abt5-body5"> 
-            <img src="imagefolder/services-img05.svg" alt="">
+            <img src=" {% static 'imagefolder/services-img05.svg' %} " alt="">
             <h2> BREEDERS FARM</h2>
             <p> This is one of the pivotal aspects of the value chain of the poultry business in Nigeria.
                  Breeders produce hatchable eggs to supply the Hatchery. Our breeders’ farm accommodates Cobb 500 and Ross 308 parent stock.</p>
         </div>
 
         <div class="abt5-body6">
-            <img src="imagefolder/services-img06.svg" alt="">
+            <img src="{% static 'imagefolder/services-img06.svg' %} " alt="">
             <h2> HATCHERY</h2>
             <P> Our eggs are hatched for 21 days under artificial conditions to Day Old Chicks. 
                 Our current hatchery installed capacity is 100,000 Day Old Chicks weekly for our farms and commercial purposes. 
@@ -228,14 +234,14 @@
 
       <div class="about5-body2">
         <div class="abt5-body7">
-            <img src="imagefolder/services-img07.svg" alt="">
+            <img src="{% static 'imagefolder/services-img07.svg' %} " alt="">
             <h2>RETAIL STORES & ECOMMERCE</h2>
             <p> Froshen Premium chicken & Frosh Supermarkets. 
                 We produce healthy and hygienic chicken meat for the public for easy access and at an affordable cost for consumption.</p>
         </div>
 
         <div class="abt5-body8">
-            <img src="imagefolder/services-img08.svg" alt="">
+            <img src="{% static 'imagefolder/services-img08.svg' %} " alt="">
             <h2> FEED MILL</h2>
             <p> Poultry feeds are in demand for optimum egg and meat production. We have 10tonnes per hour capacity feed mill 
                 factory where we produce animal feed from raw agricultural products for our farms and commercial purposes.
@@ -244,7 +250,7 @@
         </div>
 
         <div class="abt5-body9">
-            <img src="imagefolder/services-img09.svg" alt="">
+            <img src="{%static 'imagefolder/services-img09.svg' %} " alt="">
             <h2> AGRO ESTATES</h2>
             <P> These are the plantations for Farmsponsor cash and food crops such as maize, soya beans and oil palm. 
                 This also represents an investment arm of Farmsponsor aimed at providing safe investment options for individuals, 
@@ -259,19 +265,19 @@
 <div  class="about6">
     <h1> Our Partners</h1>
     <div class="abt6-1">
-        <img src="imagefolder/the-promise-main.svg" alt="" width="10%">
-        <img src="imagefolder/suntrust-logo (1).svg" alt="" width="10%">
-        <img src="imagefolder/sterling-bank.svg" alt="" width="10%">
-        <img src="imagefolder/naic-logo.svg" alt="">
-        <img src="imagefolder/polaris-bank.svg" alt="" width="`10%">
+        <img src="{ % static 'imagefolder/the-promise-main.svg' %} " alt="" width="10%">
+        <img src="{% static 'imagefolder/suntrust-logo (1).svg' %} " alt="" width="10%">
+        <img src="{% static 'imagefolder/sterling-bank.svg' %} " alt="" width="10%">
+        <img src="{%static 'imagefolder/naic-logo.svg' %} " alt="">
+        <img src="{% static 'imagefolder/polaris-bank.svg' %} " alt="" width="`10%">
     </div>
 
     <div class="abt6-2">
-        <img src="imagefolder/firstbank-logo.svg" alt="" width="15%">
-        <img src="imagefolder/uba-bank.svg" alt="" width="10%">
-        <img src="imagefolder/access-bank.svg" alt="" width="10%">
-        <img src="imagefolder/farmergiant.svg" alt="" width="10%">
-        <img src="imagefolder/keystone-bank.png" alt="" width="10%">
+        <img src="{% static 'imagefolder/firstbank-logo.svg' %} " alt="" width="15%">
+        <img src="{ % static 'imagefolder/uba-bank.svg' %} " alt="" width="10%">
+        <img src="{% static 'imagefolder/access-bank.svg'%} " alt="" width="10%">
+        <img src="{% static 'imagefolder/farmergiant.svg' %} " alt="" width="10%">
+        <img src="{% static 'imagefolder/keystone-bank.png' %} " alt="" width="10%">
     </div>
 </div>
 
@@ -283,7 +289,7 @@
     </div>
     <div class="abt7-2">
       <div class="abt7-21">
-        <img src="imagefolder/WABEA.png" alt="">
+        <img src="{% static 'imagefolder/WABEA.png' %} " alt="">
          <div class="abt7-22">
              <h2>Winner </h2>
              <p> West Africa’s best world class Agri-Tech/Agricultural Real Estate Brand of the Decade.</p>
@@ -291,7 +297,7 @@
       </div>
 
       <div class="abt7-31">
-        <img src="imagefolder/AQAA.png" alt="">
+        <img src="{% static 'imagefolder/AQAA.png' %} " alt="">
         <div class="abt7-32">
             <h2> Winner</h2>
             <p> Africa’s leading quality Agric-Tech Platfrom Brand of the year 2021. </p>
@@ -316,16 +322,16 @@
   <div class="form-abt2">
 
       <div class="form-abtmainmain">
-        <img src="imagefolder/fs-footer-img.svg" alt="">
+        <img src="{ % static 'imagefolder/fs-footer-img.svg' %} " alt="">
         <div class="form-abtmain">
           <div>
-            <img src="imagefolder/facebook.svg" alt="">
+            <img src="{% static 'imagefolder/facebook.svg' % } " alt="">
           </div>
           <div>
-            <img src="imagefolder/twitter (1).svg" alt="">
+            <img src="{ % static 'imagefolder/twitter (1).svg' %} " alt="">
           </div>
           <div>
-            <img src="imagefolder/instagram (1).svg" alt="">
+            <img src="{ % static 'imagefolder/instagram (1).svg' %} " alt="">
           </div>
         </div>
       </div>

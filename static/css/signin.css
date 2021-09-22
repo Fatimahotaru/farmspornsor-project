@@ -1,0 +1,59 @@
+.nav-item{
+    margin-right: 40px;
+    background-color: whitesmoke;
+ 
+}
+
+.button_get{
+    background-color: green;
+    color: white;
+    height: 40px;
+    border-radius: 5px;
+    padding: 0 25px 0 25px ;
+}
+.button_nav{
+   margin-right: 25px;
+}
+.form{
+    margin: 10% 0 20% 30%;
+    
+}
+div.form h1{
+    margin-left: 20%;
+}
+.form-main{
+    margin-top: 30px;
+   
+}
+div.form2 input{
+    width: 50%;
+    padding: 15px;
+    border-radius: 5px;
+    border-color: rgb(129, 125, 125);
+}
+.form3{
+    margin-top: 20px;
+}
+div.form4 input{
+    width: 50%;
+    padding: 15px;
+    border-radius: 5px;
+    border-color: rgb(128, 121, 121);
+}
+.form-but{
+    width: 50%;
+    margin-top: 50px;
+    padding: 15px;
+    color: white;
+    background-color: rgb(31, 59, 31);
+    border-color:rgb(31, 59, 31) ;
+    border-radius: 5px;
+}
+.form6-1{
+    width: 50%;
+    padding: 15px;
+    border-color: rgb(87, 133, 87);
+    border-radius: 5px;
+    background-color: white;
+    margin-top: 50px;
+}
